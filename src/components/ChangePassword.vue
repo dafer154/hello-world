@@ -1,22 +1,35 @@
 <template>
-  <div id="Login">
+  <div id="ChangePassword">
     <div class="main-container">
       <div class="wrapp-form">
         <div class="container-login">
           <div class="title">
             <span>wemi</span>
           </div>
+          <div class="description-password">
+            <span>
+              Hola
+              <span class="name-bold">Mikaela Rojas</span>, cómo es tu primera vez usando wemi, necesitamos que cambies tu contraseña por temas de seguridad, al igual que conozcas nuestra politica de uso
+            </span>
+          </div>
           <div class="form-login">
             <div class="container-input">
-              <span class="label-input">Email address</span>
+              <span class="label-input">Password</span>
               <input class="custom-input" placeholder="Example@email.com" />
             </div>
             <div class="container-input">
-              <span class="label-input">Password</span>
+              <span class="label-input">Confirm Password</span>
               <input class="custom-input" placeholder="Enter your password" />
             </div>
+            <div class="checkbox-policy">
+              <input type="radio" class="custom-checkbox" />
+              <span>
+                Acepto la politica de uso de
+                <span class="logo-checkbox">wemi</span>
+              </span>
+            </div>
             <div class="container-button">
-              <button class="custom-button">Log in</button>
+              <button class="custom-button">Confirmar</button>
             </div>
           </div>
         </div>
@@ -46,7 +59,7 @@
 
 <script>
 export default {
-  name: "Login",
+  name: "ChangePassword",
   data() {
     return {
       title: "PROM 2020"
@@ -58,6 +71,46 @@ export default {
 </script>
 
 <style>
+/*NEWS CLASSES*/
+
+.description-password {
+  text-align: left;
+  color: #758497;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 400;
+  padding-bottom: 6%;
+}
+
+.name-bold {
+  color: #363a65;
+  font-family: "Montserrat - Bold";
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.checkbox-policy {
+  align-items: center;
+  display: flex;
+  padding-top: 6%;
+  color: #647182;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.custom-checkbox {
+  width: 10%;
+  height: 25px;
+}
+
+.logo-checkbox {
+  color: #06a0a8;
+  font-family: "Montserrat - Regular";
+  font-weight: 400;
+}
+
+/* */
 .main-container {
   display: flex;
   height: 100%;
@@ -67,9 +120,15 @@ export default {
 .wrapp-form {
   width: 40%;
   background-color: white;
-  padding-top: 8%;
+  padding-top: 4%;
   flex-direction: column;
   display: flex;
+}
+
+.description-password {
+}
+
+.name-bold {
 }
 
 .container-login {

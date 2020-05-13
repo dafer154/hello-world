@@ -3,10 +3,12 @@
     <!-- <img alt="Vue logo" src="./assets/logo.png" />
     <HelloWorld msg="David Fernando Zuluaga" title="TEST" />
     <hr />
-    <MyComponent /> -->
+    <MyComponent />-->
     <!-- <StartPage /> -->
     <!-- <Login/> -->
-    <invitationStudents/>
+    <!-- <invitationStudents/> -->
+    <!-- <ChangePassword /> -->
+    <RestorePassword />
   </div>
 </template>
 
@@ -14,8 +16,10 @@
 // import HelloWorld from "./components/HelloWorld.vue";
 // import MyComponent from "./components/MyComponent.vue";
 // import StartPage from './components/StartPage.vue';
-import InvitationStudents from './components/InvitationStudents.vue';
-// import Login from './components/Login.vue'
+// import InvitationStudents from './components/InvitationStudents.vue';
+// import Login from './components/Login.vue';
+import RestorePassword from "./components/RestorePassword.vue";
+// import ChangePassword from './components/ChangePassword.vue';
 
 export default {
   name: "App",
@@ -24,14 +28,15 @@ export default {
     // MyComponent
     // StartPage
     // Login
-    InvitationStudents
+    // InvitationStudents
+    // ChangePassword
+    RestorePassword
   }
 };
 </script>
 
 <style>
-
-body{
+body {
   margin: 0;
 }
 

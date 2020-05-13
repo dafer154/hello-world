@@ -1,22 +1,21 @@
 <template>
-  <div id="Login">
+  <div id="RestorePassword">
     <div class="main-container">
       <div class="wrapp-form">
         <div class="container-login">
           <div class="title">
             <span>wemi</span>
           </div>
+          <div class="description-password">
+            <span>Ingresa tú email y una nueva contraseña será enviada a tu buzón de entrada, es posible que pueda ocurrir un error en el camino y llegue a spam, revisalo tambien por si acaso</span>
+          </div>
           <div class="form-login">
             <div class="container-input">
               <span class="label-input">Email address</span>
               <input class="custom-input" placeholder="Example@email.com" />
             </div>
-            <div class="container-input">
-              <span class="label-input">Password</span>
-              <input class="custom-input" placeholder="Enter your password" />
-            </div>
             <div class="container-button">
-              <button class="custom-button">Log in</button>
+              <button class="custom-button">Send new password</button>
             </div>
           </div>
         </div>
@@ -46,7 +45,7 @@
 
 <script>
 export default {
-  name: "Login",
+  name: "RestorePassword",
   data() {
     return {
       title: "PROM 2020"
@@ -58,6 +57,18 @@ export default {
 </script>
 
 <style>
+/*NEWS CLASSES*/
+
+.description-password {
+  text-align: left;
+  color: #758497;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 400;
+  padding-bottom: 6%;
+}
+
+/* */
 .main-container {
   display: flex;
   height: 100%;
@@ -67,9 +78,15 @@ export default {
 .wrapp-form {
   width: 40%;
   background-color: white;
-  padding-top: 8%;
+  padding-top: 4%;
   flex-direction: column;
   display: flex;
+}
+
+.description-password {
+}
+
+.name-bold {
 }
 
 .container-login {
@@ -143,7 +160,7 @@ export default {
 }
 
 .container-button {
-  padding-top: 12%;
+  padding-top: 2%;
 }
 
 .footer-login {
